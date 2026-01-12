@@ -1,97 +1,98 @@
-body{
-    display:flex;
+@keyframes fadde {
+    from {
+        opacity: 0;
+        margin-bottom: -10px;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        margin-bottom: -10px;
+    }
+
+    to {
+        opacity: 1;
+        margin: 0;
+    }
+}
+
+body {
+    display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
     height: 100vh;
-    max-width:100%;
+    max-width: 100%;
     overflow-x: hidden;
+    animation: fade 3s ease-in-out;
 }
 
-@keyframes fadde {
-    from{opacity: 0;
-    margin-bottom:-10px ;
-}
-    to{
-        opacity: 1;
-}
+
+
+.main {
+    background-color: rgba(206, 204, 204, 0.297);
+    min-height: 100%;
+    max-height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-@keyframes fade {
-    from{opacity: 0;
-    margin-bottom:-10px ;
-}
-    to{
-        opacity: 1;
-        margin: 0;
-}
-}
-.main{
-     background-color: rgba(206, 204, 204, 0.297);
-     min-height: 100%;
-     max-height: 100%;
-     width: 100%;
-     position: relative;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     overflow-x: hidden;
-     overflow-y: hidden;
-     font-family: 'Courier New', Courier, monospace;
-}
-.main .name{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.main .name {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 22vw;
-    background: linear-gradient(to top, rgba(206, 204, 204, 0.297),rgb(91, 90, 90));
+    background: linear-gradient(to top, rgba(206, 204, 204, 0.297), rgb(91, 90, 90));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-   animation: fadde 2s ease-in;
+    animation: fadde 2s ease-in;
 }
-.main h2{
+
+.main h2 {
     position: absolute;
     top: 1%;
     animation: fade 3s ease-in-out;
 }
-.profile{
+
+.profile {
     position: absolute;
     bottom: 0;
     animation: fadde 3s ease-in-out;
-} 
-
-.main .p1{
-    position: absolute;  
-   top: 5%;
-   right: 0;
-   width:100vw;
-   font-size: 15px;
-    
 }
-.explore{
+
+.main .p1 {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    width: 100vw;
+    font-size: 15px;
+
+}
+
+.explore {
     position: absolute;
     right: 20%;
     font-size: 20px;
     bottom: 10%;
-    background: linear-gradient(to bottom,black,rgba(189, 188, 188, 0.195));
+    background: linear-gradient(to bottom, black, rgba(189, 188, 188, 0.195));
     padding: 10px;
     color: aliceblue;
     border-radius: 20px;
     box-shadow: 0px 10px 70px;
-    
-}
-.sec{
-    min-height: 120%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    flex-direction: column;
-    padding: 10px;
-    overflow:auto;
-    background: linear-gradient( to top,rgba(255, 255, 255, 0.612),rgba(0, 0, 0, 0.881)) ;
-} 
 
-.sec1{
+}
+
+.sec {
     min-height: 100%;
     height: 100vh;
     display: flex;
@@ -99,49 +100,78 @@ body{
     position: relative;
     flex-direction: column;
     padding: 10px;
-    background: linear-gradient( to top,rgba(255, 255, 255, 0.612),rgba(0, 0, 0, 0.881)) ;
-} 
-.sec span{
+    overflow: auto;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.612), rgba(0, 0, 0, 0.881));
+}
+
+.sec1 {
+    min-height: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.612), rgba(0, 0, 0, 0.881));
+}
+
+.sec1 h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5vw;
+    margin-top: -10px;
+    background: linear-gradient(to top, rgba(157, 157, 157, 0.612), rgba(0, 0, 0, 0.881));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+.sec span {
     color: aliceblue;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:5vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5vw;
     font-weight: 800;
     text-align: left;
-   
+
 }
-.acontent{
+
+.acontent {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.aimg img{
+.aimg img {
     max-width: 29vw;
 }
-.ab{
+
+.ab {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center
-
 }
-.ababu{
+
+.ababu {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     width: 80%;
     justify-content: space-between;
     background-color: rgb(65, 65, 65);
     padding: 20px;
+    animation: fade 4s ease-in-out;
 }
-.ababu p{
+
+.ababu p {
     color: aliceblue;
     font-size: 18px;
     width: 90%;
     font-weight: 500;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     animation: fade 3s ease-in-out;
 }
-.about .l{
+
+.about .l {
     color: #ff0000;
 }
