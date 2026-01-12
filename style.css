@@ -247,19 +247,64 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
+    align-items: center;
+    justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    min-height: 50vh;
+    height: 50vh;
+    overflow-y:visible;
     width: 90vw;
     background: rgba(0, 0, 0, 0.316);
 }
 
+.skilc{
+  display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-height: 45vh;
+    flex: 1;
+    align-items: center;
+padding: 0%;
+margin: 0%;
+    width: 90%;
+}
 .skills h2{
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top: 5%;
-    left:6%;
+
+    font-size: 1.8vw;
+    color: rgb(223, 241, 248);
+    margin-bottom: 20px;
+    margin-top: 60px;
+    text-align: left;
+    margin-left: 50px;
 }
 .skills h2 .l{
     color: rgb(255, 32, 32);
-    border-bottom:2px red solid ;
+    background-color: rgba(240, 248, 255, 0.808);
+    padding: 2px;
+}
+
+.s{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: -18px;
+    height: 150px;
+    width: 130px;
+    margin-top: 20px;
+    color: aliceblue;
+    background:linear-gradient(to top,rgb(65, 65, 65),white);
+    border-radius: 10px;
+}
+
+
+.s img{
+    width: 80px;
+    height: 80px;
+    background: rgb(255, 254, 254);
+    border-radius: 50%;
 }
