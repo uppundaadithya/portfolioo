@@ -4,9 +4,8 @@ body{
     padding: 0;
     margin: 0;
     height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    
+    max-width: 100vw;
+    overflow-x: unset;
 }
 
 @keyframes fadde {
@@ -35,7 +34,7 @@ body{
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     overflow-x: hidden;
+     overflow: none;
      font-family: 'Courier New', Courier, monospace;
 }
 .main .name{
@@ -54,7 +53,6 @@ body{
 .profile{
     position: absolute;
     bottom: 0;
-
     animation: fadde 3s ease-in-out;
 } 
 
@@ -117,7 +115,6 @@ body{
 
 .aimg img{
     max-width: 29vw;
-
 }
 .ab{
     display: flex;
