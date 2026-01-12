@@ -34,7 +34,7 @@ body{
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     overflow: none;
+     overflow-y: hidden;
      font-family: 'Courier New', Courier, monospace;
 }
 .main .name{
